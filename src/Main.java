@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Absolute path to the text file
-            String filename = "src/ladder_15.txt";
+            String filename = "src/bridge_10.txt";
 
             // Check if file exists first
             File file = new File(filename);
@@ -24,7 +24,6 @@ public class Main {
             int maxFlow = FlowNetworkSolver.maxFlow(graph, source, sink);
 
             boolean verboseMode = graph.n <= 5000; // Only show detailed flow for small graphs
-
 
             if (verboseMode) {
                 System.out.println("\nFlows along edges:");
